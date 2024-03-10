@@ -22,6 +22,7 @@
         .\ENV\Scripts\activate                  # activate ENV
         pip install -r .\requirements.txt       # install project dependencies
         python app.py                           # run the project
+  copy the port number what you get from here and paste the link in your chrome searchbar and open it , give input as per requirement and submit it. #get the price 
         deactivate                              # close virtual environment once done
   
 
