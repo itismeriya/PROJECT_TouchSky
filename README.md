@@ -1,69 +1,50 @@
-# Flight Fare Prediction: 
+# Flight Fare Prediction - a Classic Time Series Project
+* Flight fare prediction is a classical problem of time series forecasting that finds trends in past observations to outline the future
+* Many popular flight booking websites today, including Google Flights, showcase important insights on:
+  * Current fair status: high, low or fair
+  * Past fare trends, upcoming future trends and 
+  * Helps decide the right time to book a flight ticket.
+* In this project, we are going to build a Python Flight Fare Prediction App, that returns the fare prediction for a given set of travel details, like:  departure date, arrival date, departure city, arrival city, stoppages, and the airline carrier.
 
-## Table of Content
-  * [Demo](#demo)
-  * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Installation](#installation)
-  * [Deployement on Heroku](#deployement-on-heroku)
-  * [Directory Tree](#directory-tree)
-  * [Bug / Feature Request](#bug---feature-request)
-  * [Future scope of project](#future-scope)
+## App Functionality
+![](templates/App_Functionality.gif)
 
+## Steps to run Flight Fare App - on Windows
 
-## Demo
-Link: [https://flight-price-prediction-api.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+* Prerequisites: [Python 3.9](https://www.python.org/downloads/) (ensure Python is added to [PATH](https://medium.com/co-learning-lounge/how-to-download-install-python-on-windows-2021-44a707994013)) + [Git](https://git-scm.com/downloads) Client 
+* Open GIT CMD >> navigate to working directory >> Clone this Github Repo (or download project files from GitHub directly)
 
-[![](https://i.imgur.com/R1g2wvC.png)](https://flight-price-prediction-api.herokuapp.com/)
+      git clone https://github.com/skillcate/flight-price-prediction.git  
+* Open Windows Powershell >> navigate to new working directory (cloned repo folder)
+* Run Project in Flask (Using PIP + Virtualenv)
+ 
+        pip install virtualenv                  # install virtual environment        
+        virtualenv ENV                          # create virtual environment by the name ENV
+        .\ENV\Scripts\activate                  # activate ENV
+        pip install -r .\requirements.txt       # install project dependencies
+        python app.py                           # run the project
+        deactivate                              # close virtual environment once done
+  
 
-[![](https://i.imgur.com/p0aeL6c.png)](https://flight-price-prediction-api.herokuapp.com/)
+### Steps to run Flight Fare App - on Mac
 
-## Overview
-This is a Flask web app which predicts fare of Flight ticket.
+* Prerequisites: [Python 3.9](https://www.python.org/downloads/)
+* Open Terminal >> navigate to working directory >> Clone this Github Repo (or download project files from GitHub directly)
 
-## Motivation
-What to do when you are at home due to this pandemic situation? I started to learn Machine Learning model to get most out of it. I came to know mathematics behind all supervised models. Finally it is important to work on application (real world application) to actually make a difference.
+        git clone https://github.com/skillcate/flight-price-prediction.git  
+* Navigate to project working directory (cloned repo folder)
+* Run Project in Flask (Using PIP + Virtualenv)
 
-## Installation
-The Code is written in Python 3.6.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
-```bash
-pip install -r requirements.txt
-```
+        pip install virtualenv                  # install virtual environment
+        virtualenv ENV                          # create virtual environment by the name ENV
+        source ENV/bin/activate                 # activate ENV
+        pip install -r requirements.txt         # install project dependencies
+        python app.py                           # run the project
+        deactivate                              # close virtual environment once done
+        
+### Bug / Feature Request
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/skillcate/flight-price-prediction/issues) by including your search query and the expected result.
 
-## Deployement on Heroku
-Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
-
-[![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
-
-Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
-
-## Directory Tree 
-```
-├── static 
-│   ├── css
-├── template
-│   ├── home.html
-├── Procfile
-├── README.md
-├── app.py
-├── flight_price.ipynb
-├── flight_rf.pkl
-├── requirements.txt
-```
-
-## Technologies Used
-
-![](https://forthebadge.com/images/badges/made-with-python.svg)
-
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
-
-
-## Bug / Feature Request
-
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/Mandal-21/Flight-Price-Prediction/issues) here by including your search query and the expected result
-
-## Future Scope
-
-* Use multiple Algorithms
-* Optimize Flask app.py
-* Front-End 
+### Important links:
+* [Dataset](https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh)
+* [Project Folder on Drive](https://drive.google.com/drive/folders/1vnapi048bbmoXyoxOLLX6W_tA6a1uQ9w?usp=sharing)
